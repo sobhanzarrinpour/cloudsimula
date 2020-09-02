@@ -1,0 +1,196 @@
+{
+	"topologyName": "fat tree",
+	"totalNodes": 18,
+	"totalLevels": 4,
+	"topologyDescription": [
+		[
+			{
+				"id": 1,
+				"computerName": "Server-0",
+				"RAM": 4096,
+				"HDD": 8000,
+				"CPU": 3.2,
+				"CPU_cores": 4,
+				"level": 0
+			},
+			{
+				"id": 2,
+				"computerName": "Server-1",
+				"RAM": 4096,
+				"HDD": 8000,
+				"CPU": 3.2,
+				"CPU_cores": 4,
+				"level": 0
+			}
+		],
+		[
+			{
+				"id": 3,
+				"computerName": "Switch-0",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 1.2,
+				"CPU_cores": 4,
+				"level": 1,
+				"parentId": [1]
+			},
+			{
+				"id": 4,
+				"computerName": "Switch-1",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 1.2,
+				"CPU_cores": 4,
+				"level": 1,
+				"parentId": [2]
+			},
+			{
+				"id": 5,
+				"computerName": "Switch-2",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 1.2,
+				"CPU_cores": 4,
+				"level": 1,
+				"parentId": [1]
+			},
+			{
+				"id": 6,
+				"computerName": "Switch-3",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 1.2,
+				"CPU_cores": 4,
+				"level": 1,
+				"parentId": [2]
+			}
+		],
+		[
+			{
+				"id": 7,
+				"computerName": "Router-0",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 1.2,
+				"CPU_cores": 2,
+				"level": 2,
+				"parentId": [3,4]
+			},
+			{
+				"id": 8,
+				"computerName": "Router-1",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 1.2,
+				"CPU_cores": 2,
+				"level": 2,
+				"parentId": [3,4]
+			},
+			{
+				"id": 9,
+				"computerName": "Router-2",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 1.2,
+				"CPU_cores": 2,
+				"level": 2,
+				"parentId": [5,6]
+			},
+			{
+				"id": 10,
+				"computerName": "Router-3",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 1.2,
+				"CPU_cores": 2,
+				"level": 2,
+				"parentId": [5,6]
+			}
+		],
+		[
+			{
+				"id": 11,
+				"computerName": "pc-0",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 3.2,
+				"CPU_cores": 2,
+				"level": 3,
+				"parentId": [7]
+			},
+			{
+				"id": 12,
+				"computerName": "pc-1",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 3.2,
+				"CPU_cores": 2,
+				"level": 3,
+				"parentId": [7]
+			},
+			{
+				"id": 13,
+				"computerName": "pc-2",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 3.2,
+				"CPU_cores": 2,
+				"level": 3,
+				"parentId": [8]
+			},
+			{
+				"id": 14,
+				"computerName": "pc-3",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 3.2,
+				"CPU_cores": 2,
+				"level": 3,
+				"parentId": [8]
+			},
+			{
+				"id": 15,
+				"computerName": "pc-4",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 3.2,
+				"CPU_cores": 2,
+				"level": 3,
+				"parentId": [9]
+			},
+			{
+				"id": 16,
+				"computerName": "pc-5",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 3.2,
+				"CPU_cores": 2,
+				"level": 3,
+				"parentId": [9]
+			},
+			{
+				"id": 17,
+				"computerName": "pc-6",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 3.2,
+				"CPU_cores": 2,
+				"level": 3,
+				"parentId": [10]
+			},
+			{
+				"id": 18,
+				"computerName": "pc-7",
+				"RAM": 2048,
+				"HDD": 500,
+				"CPU": 3.2,
+				"CPU_cores": 2,
+				"level": 3,
+				"parentId": [10]
+			}
+		]
+	],
+	"lanSpeed": 1000,
+	"sourceId": 11,
+	"destinationId": 13
+}

@@ -1,0 +1,6 @@
+{
+	"packetSize": 10,
+	"numberOfPackets": 30000,
+	"packetTimeout": 300,
+	"packetHeader": []
+}
