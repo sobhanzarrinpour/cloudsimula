@@ -1,4 +1,5 @@
 const Topology = require('./topologyGenerator');
+const os = require('os'); 
 
 let routeGenerator = Symbol();
 let Relatins = Symbol();
@@ -8,7 +9,12 @@ let move = Symbol();
 
 class Router{
 	constructor(name='topology.json'){
-		let topologyPath = `${__dirname}\\..\\topology\\${name}`;
+		let topologyPath = '';
+		if(os.platform() === 'windows'){
+			topologyPath = `${__dirname}\\..\\topology\\${name}`;
+		}else{
+			topologyPath = `${__dirname}/../topology/${name}`;
+		}
 		this.topology = new Topology(topologyPath);
 		this.routes = [];
 	}
