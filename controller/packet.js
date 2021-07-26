@@ -1,13 +1,12 @@
-const os = require('os'); 
+const os = require('os');
 
 let packetGenerator = Symbol();
 class Packet{
 	constructor(name='packet.json'){
-		if(os.platform() === 'windows'){
-			this.path = `${__dirname}\\..\\topology\\${name}`; // for windows
-		}
-		else{
-			this.path = `${__dirname}/../topology/${name}`; // for linux
+	    if (os.platform() === 'windows'){
+		    this.path = `${__dirname}\\..\\topology\\${name}`;   // for windows
+		}else{
+		    this.path = `${__dirname}/../topology/${name}`;    // for linux
 		}
 		this.packets = [];
 	}
